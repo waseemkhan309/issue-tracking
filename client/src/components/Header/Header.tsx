@@ -1,7 +1,7 @@
 'use client'
 import classnames from 'classnames';
 import Link from 'next/link';
-import { useParams, usePathname } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import React from 'react';
 import { FaBug } from "react-icons/fa";
 
@@ -13,7 +13,8 @@ const links =[
 ]
 
 const Header = () => {
-    const pathname = usePathname()
+    const pathname = usePathname();
+
   return (
     <>
     <nav className='flex space-x-6 border-b mb-5 px-5 h-14 items-center '>
